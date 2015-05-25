@@ -12,7 +12,8 @@ OAuth.registerService('makerpass', 2, null, function(query) {
       accessToken: OAuth.sealSecret(accessToken),
       email: identity.email,
       avatarUrl: identity.avatar_url,
-      memberships: identity.memberships
+      memberships: identity.memberships,
+      schools: identity.schools
     },
     options: {profile: {name: identity.name}}
   }

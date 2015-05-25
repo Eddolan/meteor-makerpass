@@ -1,7 +1,7 @@
 Package.describe({
   name: 'makerpass:oauth',
   summary: "A library to interact with MakerPass",
-  version: '1.0.0',
+  version: '1.1.0',
   git: "https://github.com/makerpass/meteor-makerpass"
 });
 
