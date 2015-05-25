@@ -26,7 +26,7 @@ var getAccessToken = function (query) {
   var response
   try {
     response = HTTP.post(
-      "https://auth.makersquare.com/oauth/token", {
+      "https://auth.makerpass.com/oauth/token", {
         headers: {
           Accept: 'application/json'
         },
@@ -54,7 +54,7 @@ var getAccessToken = function (query) {
 var getIdentity = function (accessToken) {
   try {
     return HTTP.get(
-      "https://auth.makersquare.com/api/v1/me.json", {
+      "https://auth.makerpass.com/api/v1/me.json", {
         params: {access_token: accessToken}
       }).data
   } catch (err) {

@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'makersquare:makerpass',
+  name: 'makerpass:oauth',
   summary: "A library to interact with MakerPass",
   version: '1.0.0',
-  git: "https://github.com/makersquare/meteor-makerpass"
+  git: "https://github.com/makerpass/meteor-makerpass"
 });
 
 Package.onUse(function(api) {
@@ -28,6 +28,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('makersquare:makerpass');
+  api.use('makerpass:oauth');
   api.addFiles('makerpass-tests.js');
 });

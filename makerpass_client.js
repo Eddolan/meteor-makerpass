@@ -26,7 +26,7 @@ Makerpass.requestCredential = function (options, credentialRequestCompleteCallba
   var loginStyle = OAuth._loginStyle('makerpass', config, options)
 
   var loginUrl =
-    'https://auth.makersquare.com/oauth/authorize' +
+    'https://auth.makerpass.com/oauth/authorize' +
     '?client_id=' + config.clientId +
     // '&scope=' + flatScope +
     '&redirect_uri=' + OAuth._redirectUri('makerpass', config) +
